@@ -143,7 +143,7 @@ Em seguida, é comparado o `id` do `Individuo` na posição correspondente ao va
 Caso o primeiro seja menor, a variável `inicio` recebe o valor da variável `meio` mais `1`, limitando a pesquisa à segunda metade do `vetor`.
 
 ```cpp
-		else if (this->lista[meio].get_id() < id)
+	else if (this->lista[meio].get_id() < id)
         {
             inicio = meio + 1;
         }
@@ -152,7 +152,7 @@ Caso o primeiro seja menor, a variável `inicio` recebe o valor da variável `me
 Caso os valores sejam iguais, o método é encerrado, retornando o `Individuo` armazenado na posição correspondente ao valor da variável `meio`.
 
 ```cpp
-		else
+	else
         {
             return this->lista[meio];
         }
